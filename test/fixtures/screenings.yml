@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ondate: 2019-03-07 10:41:51
+  first: false
+  second: false
+  third: false
+  fourth: false
+
+two:
+  ondate: 2019-03-07 10:41:51
+  first: false
+  second: false
+  third: false
+  fourth: false

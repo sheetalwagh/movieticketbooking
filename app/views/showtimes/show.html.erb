@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @showtime.time %>
+</p>
+
+<p>
+  <strong>Tickets sold:</strong>
+  <%= @showtime.tickets_sold %>
+</p>
+
+<p>
+  <strong>References:</strong>
+  <%= @showtime.references %>
+</p>
+
+<p>
+  <strong>References:</strong>
+  <%= @showtime.references %>
+</p>
+
+<%= link_to 'Edit', edit_showtime_path(@showtime) %> |
+<%= link_to 'Back', showtimes_path %>

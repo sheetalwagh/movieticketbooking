@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Showtimes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Tickets sold</th>
+      <th>References</th>
+      <th>References</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @showtimes.each do |showtime| %>
+      <tr>
+        <td><%= showtime.time %></td>
+        <td><%= showtime.tickets_sold %></td>
+        <td><%= showtime.references %></td>
+        <td><%= showtime.references %></td>
+        <td><%= link_to 'Show', showtime %></td>
+        <td><%= link_to 'Edit', edit_showtime_path(showtime) %></td>
+        <td><%= link_to 'Destroy', showtime, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Showtime', new_showtime_path %>
